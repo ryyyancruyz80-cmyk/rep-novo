@@ -1,7 +1,58 @@
-ola
-salve
 
-salve renne descate 
-salve ryan reynolds
+1. aparece a mensagem "fatal: not a git repositor..."
 
+3. aparece on branch master, no commits yet
+
+
+
+PARTE 2:
+
+2. apareceu untracked files,README.md em vermelho
+
+4. apareceu new file: README.md, com a cor verde
+
+git add .
+
+resets retornam pra um checkpoint
+esses dizem o quanto vc quer voltar:
+
+git reset --soft [id_commit]
+desfaz commit mas mantém alterações
+pode ser usado HEAD~1 no lugar do id commit
+
+git reset --mixed [id_commit]
+desfaz o commit volta os arquivos pra vermelho
+os tirando da stage area
+
+git reset --hard [id_commit]
+desfaz tudo e apaga o arquivo
+
+
+branch:
+desenvolver sem afetar a versão original, linha paralela
+de desenvolvimento
+
+git branch: lista as brechas locais do repositório,
+
+git branch -a: lista as locais quanto remotas
+
+git branch <nome>: cria uma nova branch apartir da atual mas não muda pra ela
+
+git checkout <nome>
+
+git checkout -b <nome>: cria uma nova branch e automaticamente muda pra ela
+
+git branch -m <antigo> <novo>: renomeia branch
+
+git branch -d: exclui uma branch local
+
+git push -u origin <nome>: envia uma branch local para o repositório remoto e estabelece um vinculo entre elas
+
+git merge <nome>: traz as alterações pra branch principal
+
+
+
+Fork
+fazer uma cópia pra conta do GitHub
+pull request: o dono do repositório decide se vai incluir no repositório ou não
 
